@@ -1,0 +1,30 @@
+# ASU Theme
+# Arizona State University colors: Maroon (#8C1D40) and Gold (#FFC627)
+
+[light]
+  # Primary
+  primary = "#8C1D40"
+
+  # Menu
+  menu_primary = "#8C1D40"
+  menu_text = "#fff"
+  menu_text_active = "#FFC627"
+  menu_title = "#fff"
+
+  # Home sections
+  home_section_odd = "#fff"
+  home_section_even = "#f7f7f7"
+
+[dark]
+  # Primary
+  primary = "#FFC627"
+
+  # Menu
+  menu_primary = "#1a1a1a"
+  menu_text = "#fff"
+  menu_text_active = "#FFC627"
+  menu_title = "#FFC627"
+
+  # Home sections
+  home_section_odd = "#1a1a1a"
+  home_section_even = "#252525"

@@ -26,19 +26,12 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research focuses on international finance, exchange rates, and monetary policy.
 
-# Interests to show in About widget
-interests:
-  - International Finance
-  - Exchange Rates
-  - Monetary Policy
-  - Currency Risk
-
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Economics
-      institution: University of Chicago
-      year: 2016
+    - course: PhD in Financial Economics
+      institution: University of Chicago, Booth School of Business
+      year: 2018
 
 # Social/Academic Networking
 social:
