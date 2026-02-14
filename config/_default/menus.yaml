@@ -7,9 +7,12 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Academic Research
-    url: 'research/'
+  - name: Working Papers
+    url: '#working-papers'
     weight: 20
-  - name: Policy Writing
-    url: 'policy/'
+  - name: Published Papers
+    url: '#published-papers'
     weight: 30
+  - name: Policy Writing
+    url: '#policy-writing'
+    weight: 40
