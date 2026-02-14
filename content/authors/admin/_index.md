@@ -49,5 +49,7 @@ social:
 highlight_name: true
 ---
 
-Tony Zhang is a Visiting Associate Professor of Finance at Arizona State University's W.P. Carey School of Business. His research focuses on international finance, exchange rates, monetary policy, and currency risk.
+Tony Zhang is a Visiting Associate Professor of Finance at Arizona State University's W.P. Carey School of Business. Previously, he was a Principal Economist and Group Manager at the Federal Reserve Board of Governors and an Assistant Professor of Finance at Boston University's Questrom School of Business. He received his PhD in Financial Economics from the University of Chicago Booth School of Business in 2018.
+
+His research focuses on international finance, asset pricing, and macroeconomics. His work has been published in the *Journal of Finance*, the *Review of Financial Studies*, the *Review of Economic Studies*, the *Journal of Financial Economics*, and the *Brookings Papers on Economic Activity*, among others. His research has been recognized with the Nasdaq Award for Best Paper on Asset Pricing at the Western Finance Association and the Best Paper Award at the Vienna Symposium on Foreign Exchange Markets.
 {style="text-align: justify;"}
