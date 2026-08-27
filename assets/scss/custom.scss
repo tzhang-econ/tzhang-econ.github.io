@@ -1,0 +1,402 @@
+// ==========================================================================
+//  Tony Zhang — custom styles
+//
+//  Layout and typography of the research listings follow the compact
+//  reference format: a small letter-spaced section label, one flowing line
+//  per paper (title, coauthors, venue), an optional note, and a row of
+//  small-caps links. Colours are the ASU palette.
+// ==========================================================================
+
+// --- ASU palette ---------------------------------------------------------
+$asu-maroon: #8c1d40;
+$asu-maroon-dark: #6e1732;
+$asu-gold: #ffc627;
+
+// --- Warm neutrals, chosen to sit beside maroon and gold -----------------
+$ink: #1c1a17; // body text
+$ink-soft: #46413a; // notes
+$ink-muted: #6f6a61; // coauthors, venues
+$rule: #e6e1d8; // hairline between entries
+
+// --- Dark-mode neutrals --------------------------------------------------
+$ink-dk: #ece9e3;
+$ink-soft-dk: #b9b3a8;
+$ink-muted-dk: #9a9389;
+$rule-dk: #35322c;
+
+// --- Type stacks ---------------------------------------------------------
+// The theme hardcodes `sans-serif` as the fallback after the body font, so
+// the serif stack is restated here to survive a failed webfont load.
+$serif: 'Source Serif 4', georgia, 'Times New Roman', serif;
+$sans: 'Inter', -apple-system, blinkmacsystemfont, 'Helvetica Neue', arial, sans-serif;
+
+// --- Measure -------------------------------------------------------------
+// One reading column for the whole page, so the biography and the paper
+// entries share a left edge. 44rem is roughly 80 characters at this size.
+$measure: 44rem;
+
+html {
+  font-family: $serif;
+  color: $ink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif;
+}
+
+.navbar-light {
+  font-family: $sans;
+}
+
+.home-section > .container {
+  max-width: $measure;
+}
+
+// --- Navigation ----------------------------------------------------------
+// Small-caps navigation, matching the label treatment used on paper entries.
+.navbar-brand {
+  font-family: $sans;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+#navbar-main .navbar-nav .nav-link {
+  font-family: $sans;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+// ==========================================================================
+//  Research listings
+// ==========================================================================
+
+.wg-papers {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+// Fills the container's content box so paper titles share a left edge with
+// the portrait and biography columns above (which Bootstrap aligns there).
+.paper-list {
+  max-width: 100%;
+}
+
+// Section label: small, letter-spaced, with a short gold rule beneath.
+.paper-section-label {
+  margin: 0 0 1.4rem;
+  font-family: $sans;
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $asu-maroon;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    width: 2.25rem;
+    height: 3px;
+    margin-top: 0.6rem;
+    content: '';
+    background: $asu-gold;
+  }
+}
+
+.paper-section-subtitle {
+  margin: -0.9rem 0 1.4rem;
+  font-size: 0.92rem;
+  color: $ink-muted;
+}
+
+.paper-item {
+  padding-bottom: 0.95rem;
+  margin-bottom: 0.95rem;
+  line-height: 1.62;
+  border-bottom: 1px solid $rule;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.paper-title {
+  font-weight: 700;
+  color: $ink;
+
+  a {
+    color: $asu-maroon;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $asu-maroon-dark;
+      text-decoration: underline;
+      text-decoration-color: $asu-gold;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.paper-authors,
+.paper-venue {
+  color: $ink-muted;
+}
+
+// Coauthor homepages stay in the muted colour so the entry still reads as one
+// line; the link only announces itself on hover.
+.paper-authors a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($ink-muted, 0.35);
+
+  &:hover,
+  &:focus {
+    color: $asu-maroon;
+    border-bottom-color: $asu-gold;
+  }
+}
+
+// Journal abbreviation, set in the ASU gold.
+.paper-badge {
+  display: inline-block;
+  padding: 0.12em 0.45em;
+  margin-left: 0.1rem;
+  font-family: $sans;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: $asu-maroon;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: 0.16em;
+  background: $asu-gold;
+  border-radius: 2px;
+}
+
+// Editorial status, e.g. "Revise and resubmit" — outlined rather than filled
+// so it reads as secondary to the journal badge.
+.paper-status {
+  display: inline-block;
+  padding: 0.1em 0.45em;
+  margin-left: 0.1rem;
+  font-family: $sans;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: $asu-maroon;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: 0.16em;
+  border: 1px solid rgba($asu-maroon, 0.4);
+  border-radius: 2px;
+}
+
+.paper-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.87em;
+  line-height: 1.5;
+  color: $ink-soft;
+}
+
+.paper-links {
+  margin-top: 0.35rem;
+  font-family: $sans;
+  font-size: 0.69rem;
+  color: $ink-muted;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  a {
+    color: $asu-maroon;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      color: $asu-maroon-dark;
+      border-bottom-color: $asu-gold;
+    }
+  }
+}
+
+.paper-sep {
+  margin: 0 0.4rem;
+  color: rgba($ink-muted, 0.5);
+}
+
+.paper-press-label {
+  color: $ink-muted;
+}
+
+// ==========================================================================
+//  Profile
+// ==========================================================================
+
+// Text link row under the biography, styled like the paper link rows.
+.profile-links {
+  margin-top: 1.1rem;
+  font-family: $sans;
+  font-size: 0.69rem;
+  color: $ink-muted;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  a {
+    color: $asu-maroon;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      color: $asu-maroon-dark;
+      border-bottom-color: $asu-gold;
+    }
+  }
+}
+
+#profile .portrait-title h2 {
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+#profile .portrait-title h3 {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: $ink-muted;
+}
+
+// Gold ring on the avatar, echoing the ASU pairing. Sized down so the
+// portrait column sits comfortably inside the narrower reading measure.
+#profile .avatar {
+  width: 190px;
+  height: 190px;
+  box-shadow: 0 0 0 3px $asu-gold, 0 0 0 6px rgba($asu-maroon, 0.12);
+}
+
+.section-subheading {
+  font-family: $sans;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: $asu-maroon;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+// ==========================================================================
+//  Small screens
+// ==========================================================================
+
+// The theme drops the root font size on narrow viewports, which would take
+// the letter-spaced labels and link rows below a comfortable reading size.
+// These are re-set in absolute terms so they stay legible on a phone.
+@include media-breakpoint-down(md) {
+  .paper-links,
+  .profile-links {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  .paper-section-label {
+    font-size: 12px;
+  }
+
+  .paper-badge,
+  .paper-status {
+    font-size: 10px;
+  }
+
+  .paper-sep {
+    margin: 0 0.3rem;
+  }
+
+  #profile .avatar {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+// ==========================================================================
+//  Dark mode
+// ==========================================================================
+
+.dark {
+  .paper-item {
+    border-bottom-color: $rule-dk;
+  }
+
+  .paper-title {
+    color: $ink-dk;
+
+    a {
+      color: $asu-gold;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration-color: $asu-gold;
+      }
+    }
+  }
+
+  .paper-authors,
+  .paper-venue,
+  .paper-press-label {
+    color: $ink-muted-dk;
+  }
+
+  .paper-authors a {
+    border-bottom-color: rgba($ink-muted-dk, 0.4);
+
+    &:hover,
+    &:focus {
+      color: $asu-gold;
+      border-bottom-color: $asu-gold;
+    }
+  }
+
+  .paper-note {
+    color: $ink-soft-dk;
+  }
+
+  .paper-section-label,
+  .section-subheading {
+    color: $asu-gold;
+  }
+
+  .paper-status {
+    color: $asu-gold;
+    border-color: rgba($asu-gold, 0.45);
+  }
+
+  .paper-links a,
+  .profile-links a {
+    color: $asu-gold;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      border-bottom-color: $asu-gold;
+    }
+  }
+
+  .paper-links,
+  .profile-links,
+  #profile .portrait-title h3 {
+    color: $ink-muted-dk;
+  }
+
+  .paper-sep {
+    color: rgba($ink-muted-dk, 0.5);
+  }
+}

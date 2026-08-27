@@ -1,0 +1,12 @@
+# ASU font set
+# Serif for reading, sans-serif for navigation and the small letter-spaced
+# labels used on paper entries and link rows.
+
+name = "ASU"
+
+google_fonts = "family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600"
+
+heading_font = "Source Serif 4"
+body_font = "Source Serif 4"
+nav_font = "Inter"
+mono_font = "ui-monospace"

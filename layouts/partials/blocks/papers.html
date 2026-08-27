@@ -1,0 +1,50 @@
+{{/* Hugo Blox: Papers */}}
+{{/* Compact research listing: title, coauthors, venue, note, link row. */}}
+{{/* Entries are supplied as `content.items` in the page front matter. */}}
+
+{{ $block := .wcBlock }}
+
+<div class="paper-list">
+  {{ with $block.content.title }}
+    <h2 class="paper-section-label">{{ . | markdownify | emojify }}</h2>
+  {{ end }}
+  {{ with $block.content.subtitle }}
+    <p class="paper-section-subtitle">{{ . | markdownify | emojify }}</p>
+  {{ end }}
+
+  {{ range $block.content.items }}
+    {{ $item := . }}
+    <div class="paper-item">
+      <span class="paper-title">
+        {{- with $item.url -}}
+          <a href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>{{ $item.title | markdownify }}</a>
+        {{- else -}}
+          {{ $item.title | markdownify }}
+        {{- end -}}
+      </span>
+      {{- with $item.badge }} <span class="paper-badge">{{ . }}</span>{{ end }}
+      {{- with $item.authors }} <span class="paper-authors">with {{ . | markdownify }}</span>{{ end }}
+      {{- with $item.venue }} <span class="paper-venue">&mdash; {{ . | markdownify }}</span>{{ end }}
+      {{- with $item.status }} <span class="paper-status">{{ . }}</span>{{ end }}
+
+      {{ with $item.note }}<p class="paper-note">{{ . | markdownify }}</p>{{ end }}
+
+      {{ if or $item.links $item.press }}
+        <div class="paper-links">
+          {{- range $i, $l := $item.links -}}
+            {{- if $i }}<span class="paper-sep">&middot;</span>{{ end -}}
+            <a href="{{ $l.url }}"{{ if hasPrefix $l.url "http" }} target="_blank" rel="noopener"{{ end }}>{{ $l.name }}</a>
+          {{- end -}}
+          {{- with $item.press -}}
+            {{- if $item.links }}<span class="paper-sep">&middot;</span>{{ end -}}
+            <span class="paper-press-label">Press:</span>
+            {{- range $i, $p := . -}}
+              {{- if $i }}, {{ else }} {{ end -}}
+              <a href="{{ $p.url }}"{{ if hasPrefix $p.url "http" }} target="_blank" rel="noopener"{{ end }}>{{ $p.name }}</a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

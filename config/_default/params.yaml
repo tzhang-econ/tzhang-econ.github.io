@@ -8,8 +8,8 @@
 appearance:
   theme_day: asu
   theme_night: asu
-  font: minimal
-  font_size: L
+  font: asu
+  font_size: M
 
 # SEO
 
@@ -18,7 +18,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: 'Arizona State University'
-    description: 'Tony Zhang - Visiting Associate Professor of Finance at Arizona State University. Research in international finance, exchange rates, and monetary policy.'
+    description: 'Tony Zhang is an Associate Professor of Finance at Arizona State University. His research covers international finance, asset pricing, and macroeconomics.'
     twitter: ''
   analytics:
     google_analytics: ''

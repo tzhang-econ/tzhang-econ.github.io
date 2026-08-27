@@ -19,6 +19,10 @@
   # Primary
   primary = "#FFC627"
 
+  # Page background. Without this the theme falls back to a blue-grey default,
+  # which does not match the neutral section colours below.
+  background = "#1a1a1a"
+
   # Menu
   menu_primary = "#1a1a1a"
   menu_text = "#fff"

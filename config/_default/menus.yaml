@@ -1,6 +1,6 @@
 # Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
+#   Anchors (`#id`) link to a section block on the single-page homepage;
+#   the `id` must match the block's `id` in `content/_index.md`.
 #   The weight parameter defines the order that the links will appear in.
 
 main:
@@ -10,9 +10,12 @@ main:
   - name: Working Papers
     url: '#working-papers'
     weight: 20
-  - name: Published Papers
-    url: '#published-papers'
+  - name: Publications
+    url: '#publications'
     weight: 30
   - name: Policy Writing
     url: '#policy-writing'
     weight: 40
+  - name: CV
+    url: 'https://www.dropbox.com/scl/fi/h9ao7c640gya2p2ykx99m/CV_TonyZhang.pdf?rlkey=nrx6tmm1rzx848yt4stbxhxt7&st=6e2x97ej&dl=0'
+    weight: 50
