@@ -55,7 +55,6 @@ sections:
       items:
         - title: 'Convenience Lost'
           url: 'https://www.sciencedirect.com/science/article/pii/S0304405X26001182'
-          badge: JFE
           authors: 'Zhengyang Jiang and [Robert Richmond](https://robertjrichmond.com/)'
           venue: '*Journal of Financial Economics*, August 2026'
           links:
@@ -71,7 +70,6 @@ sections:
 
         - title: 'Openness, Integration, and the International Monetary Order'
           url: 'https://economic-policy.org/2nd-ep-pegi/openness-integration-international-monetary-order/'
-          badge: EP
           authors: 'Tarek A. Hassan, Thomas M. Mertens, and [Jingye Wang](https://jingyew.github.io/)'
           venue: '*Economic Policy: PEGI*, Spring 2026'
           links:
@@ -82,7 +80,6 @@ sections:
 
         - title: 'Trade War and the Dollar Anchor'
           url: 'https://drive.google.com/file/d/1-CZYlIznc7hn76Vr0rIpueq5qyxR4NtP/view?usp=sharing'
-          badge: BPEA
           authors: 'Tarek A. Hassan, Thomas M. Mertens, and [Jingye Wang](https://jingyew.github.io/)'
           venue: '*Brookings Papers on Economic Activity*, Fall 2025'
           links:
@@ -98,7 +95,6 @@ sections:
 
         - title: 'Understanding the Strength of the Dollar'
           url: 'https://www.sciencedirect.com/science/article/pii/S0304405X25000601'
-          badge: JFE
           authors: 'Zhengyang Jiang and [Robert Richmond](https://robertjrichmond.com/)'
           venue: '*Journal of Financial Economics*, June 2025'
           links:
@@ -109,7 +105,6 @@ sections:
 
         - title: 'The Hedging Channel of Exchange Rate Determination'
           url: 'https://academic.oup.com/rfs/article/38/1/1/7833369'
-          badge: RFS
           authors: '[Gordon Y. Liao](https://gliao.xyz/)'
           venue: '*Review of Financial Studies* 38(1), 2025, pp. 1&ndash;38'
           links:
@@ -125,7 +120,6 @@ sections:
 
         - title: 'A Portfolio Approach to Global Imbalances'
           url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/jofi.13333'
-          badge: JF
           authors: 'Zhengyang Jiang and [Robert Richmond](https://robertjrichmond.com/)'
           venue: '*Journal of Finance* 79(3), 2024, pp. 2025&ndash;2076'
           links:
@@ -138,7 +132,6 @@ sections:
 
         - title: 'A Risk-based Theory of Exchange Rate Stabilization'
           url: 'https://academic.oup.com/restud/article/90/2/879/6619571'
-          badge: ReStud
           authors: 'Tarek A. Hassan and Thomas M. Mertens'
           venue: '*The Review of Economic Studies*, June 2022'
           links:
@@ -155,7 +148,6 @@ sections:
 
         - title: 'Monetary Policy Spillovers through Invoicing Currencies'
           url: 'https://onlinelibrary.wiley.com/doi/10.1111/jofi.13071'
-          badge: JF
           venue: '*Journal of Finance* 77(1), 2022, pp. 129&ndash;161'
           links:
             - name: Published Version
@@ -167,7 +159,6 @@ sections:
 
         - title: 'The Economics of Currency Risk'
           url: 'https://www.annualreviews.org/content/journals/10.1146/annurev-economics-092220-103354'
-          badge: ARE
           authors: 'Tarek A. Hassan'
           venue: '*Annual Review of Economics* 13, 2021, pp. 281&ndash;307'
           links:
@@ -186,7 +177,6 @@ sections:
 
         - title: 'Not So Disconnected: Exchange Rates and the Capital Stock'
           url: 'https://www.sciencedirect.com/science/article/pii/S0022199615001774'
-          badge: JIE
           authors: 'Tarek A. Hassan and Thomas M. Mertens'
           venue: '*Journal of International Economics* 99, 2016, pp. S43&ndash;S57'
           links:

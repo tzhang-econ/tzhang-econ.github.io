@@ -166,25 +166,7 @@ h6 {
   }
 }
 
-// Journal abbreviation, set in the ASU gold.
-.paper-badge {
-  display: inline-block;
-  padding: 0.12em 0.45em;
-  margin-left: 0.1rem;
-  font-family: $sans;
-  font-size: 0.62rem;
-  font-weight: 600;
-  color: $asu-maroon;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  vertical-align: 0.16em;
-  background: $asu-gold;
-  border-radius: 2px;
-}
-
-// Editorial status, e.g. "Revise and resubmit" — outlined rather than filled
-// so it reads as secondary to the journal badge.
+// Editorial status, e.g. "Revise and resubmit".
 .paper-status {
   display: inline-block;
   padding: 0.1em 0.45em;
@@ -311,7 +293,6 @@ h6 {
     font-size: 12px;
   }
 
-  .paper-badge,
   .paper-status {
     font-size: 10px;
   }

@@ -22,7 +22,6 @@
           {{ $item.title | markdownify }}
         {{- end -}}
       </span>
-      {{- with $item.badge }} <span class="paper-badge">{{ . }}</span>{{ end }}
       {{- with $item.authors }} <span class="paper-authors">with {{ . | markdownify }}</span>{{ end }}
       {{- with $item.venue }} <span class="paper-venue">&mdash; {{ . | markdownify }}</span>{{ end }}
       {{- with $item.status }} <span class="paper-status">{{ . }}</span>{{ end }}
