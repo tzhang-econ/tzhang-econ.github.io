@@ -32,6 +32,8 @@ sections:
           links:
             - name: SSRN
               url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6930198'
+            - name: FT Op-Ed
+              url: 'https://www.ft.com/content/1481e787-77dc-4d54-8871-8ffb369e5dd3'
 
         - title: 'Inelastic by Construction'
           url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6749023'
