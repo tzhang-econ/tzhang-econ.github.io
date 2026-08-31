@@ -1,21 +1,17 @@
 # Navigation Links
-#   Anchors (`#id`) link to a section block on the single-page homepage;
-#   the `id` must match the block's `id` in `content/_index.md`.
+#   Each entry is a real page rather than an anchor on a single scrolling page.
 #   The weight parameter defines the order that the links will appear in.
 
 main:
   - name: Home
-    url: '#about'
+    url: '/'
     weight: 10
-  - name: Working Papers
-    url: '#working-papers'
+  - name: Research
+    url: '/research/'
     weight: 20
-  - name: Publications
-    url: '#publications'
-    weight: 30
   - name: Policy Writing
-    url: '#policy-writing'
-    weight: 40
+    url: '/policy-writing/'
+    weight: 30
   - name: CV
     url: 'https://www.dropbox.com/scl/fi/h9ao7c640gya2p2ykx99m/CV_TonyZhang.pdf?rlkey=nrx6tmm1rzx848yt4stbxhxt7&st=6e2x97ej&dl=0'
-    weight: 50
+    weight: 40

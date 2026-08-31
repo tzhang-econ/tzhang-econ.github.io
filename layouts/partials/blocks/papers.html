@@ -5,6 +5,12 @@
 {{ $block := .wcBlock }}
 
 <div class="paper-list">
+  {{/* Page heading. Set on the first block of a page only, so a page with
+       several sections gets one heading above its section labels. */}}
+  {{ with $block.content.page_title }}
+    <h1 class="page-title">{{ . | markdownify | emojify }}</h1>
+  {{ end }}
+
   {{ with $block.content.title }}
     <h2 class="paper-section-label">{{ . | markdownify | emojify }}</h2>
   {{ end }}

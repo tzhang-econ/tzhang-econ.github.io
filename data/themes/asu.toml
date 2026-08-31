@@ -11,9 +11,10 @@
   menu_text_active = "#FFC627"
   menu_title = "#fff"
 
-  # Home sections
+  # Page sections. Both the same: the alternating stripe suited a single
+  # scrolling page, but reads as a seam now that each page is its own.
   home_section_odd = "#fff"
-  home_section_even = "#f7f7f7"
+  home_section_even = "#fff"
 
 [dark]
   # Primary
@@ -29,6 +30,6 @@
   menu_text_active = "#FFC627"
   menu_title = "#FFC627"
 
-  # Home sections
+  # Page sections, uniform to match the light theme.
   home_section_odd = "#1a1a1a"
-  home_section_even = "#252525"
+  home_section_even = "#1a1a1a"

@@ -38,6 +38,11 @@ $measure: 44rem;
 html {
   font-family: $serif;
   color: $ink;
+
+  // Pages differ in length, so reserve the scrollbar's width on every page.
+  // Without this, moving between a page that scrolls and one that does not
+  // shifts the whole column sideways.
+  scrollbar-gutter: stable;
 }
 
 h1,
@@ -86,6 +91,19 @@ h6 {
 // the portrait and biography columns above (which Bootstrap aligns there).
 .paper-list {
   max-width: 100%;
+}
+
+// Page heading, e.g. "Research". Sits above the section labels on a page
+// that has more than one, and stands in for the label on a page with one.
+.page-title {
+  margin: 0 0 1.9rem;
+  font-family: $serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $ink;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
 }
 
 // Section label: small, letter-spaced, with a short gold rule beneath.
@@ -289,6 +307,11 @@ h6 {
     letter-spacing: 0.08em;
   }
 
+  .page-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+
   .paper-section-label {
     font-size: 12px;
   }
@@ -348,6 +371,10 @@ h6 {
 
   .paper-note {
     color: $ink-soft-dk;
+  }
+
+  .page-title {
+    color: $ink-dk;
   }
 
   .paper-section-label,
